@@ -1,11 +1,11 @@
-# Implementation Plan - NexusCRM System
+# Implementation Plan - CRM System
 
-NexusCRM is a Customer Relationship Management (CRM) web application designed with a premium, green-themed modern UI/UX based on the provided wireframes. It includes full authentication, customer profiles, lead status tracking, search/filtering, and an interactive dashboard.
+CRM is a Customer Relationship Management (CRM) web application designed with a premium, green-themed modern UI/UX based on the provided wireframes. It includes full authentication, customer profiles, lead status tracking, search/filtering, and an interactive dashboard.
 
 ## User Review Required
 
 > [!IMPORTANT]
-> **Database Selection (Updated)**: As requested, we will use **MongoDB** as the database with **Mongoose** as the ODM. By default, the app will try to connect to a local instance at `mongodb://127.0.0.1:27017/nexus_crm`, but this can be adjusted in the backend's `.env` file.
+> **Database Selection (Updated)**: As requested, we will use **MongoDB** as the database with **Mongoose** as the ODM. By default, the app will try to connect to a local instance at `mongodb://127.0.0.1:27017/crm`, but this can be adjusted in the backend's `.env` file.
 >
 > **Database Export File**: We will include a script (`npm run export-db`) in the backend to export all collections (Users, Customers) as JSON arrays in a readable `nexus_crm_export.json` file in the project root. This file can be easily shared or imported back.
 

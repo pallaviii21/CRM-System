@@ -2,3 +2,6 @@
 /.env
 /package-lock.json
 node_modules
+crm_system_export.json
+crm_system_export.sql
+implementation_plan.md
