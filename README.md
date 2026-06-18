@@ -38,6 +38,13 @@ CRM System is a modern, responsive Customer Relationship Management web applicat
 - **Database**: MongoDB (via Mongoose ODM)
 
 ---
+```mermaid
+graph TD
+    User([User Client]) <--> Frontend[React Frontend - Port 5173]
+    Frontend <--> |HTTP / JSON / JWT| Backend[Express Backend - Port 5000]
+    Backend <--> Database[(MongoDB - local or Atlas)]
+    Backend -.-> |Dumps to| ExportFile[JSON Export - nexus_crm_export.json]
+```
 
 ## 🚀 Installation & Setup
 
