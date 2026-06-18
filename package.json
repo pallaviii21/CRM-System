@@ -1,0 +1,15 @@
+{
+  "name": "crm-system",
+  "version": "1.0.0",
+  "description": "Customer Relationship Management (CRM) System",
+  "scripts": {
+    "setup": "npm install && npm install --prefix backend && npm install --prefix frontend",
+    "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "start": "npm run start --prefix backend",
+    "build": "npm run build --prefix frontend",
+    "export-db": "npm run export-db --prefix backend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "exportedAt": "2026-06-18T08:00:00.000Z",
+  "database": "crm_system",
+  "collections": {
+    "users": [
+      {
+        "_id": "648f10b5f5d314a520e7d001",
+        "name": "Alex",
+        "email": "alex@crm.com",
+        "password": "$2a$10$X87hE5K/f2R5HkE6g2lB2exy9d8f8A7b6c5d4e3f2g1h0j9i8k7l6",
+        "createdAt": "2026-06-18T08:00:00.000Z",
+        "updatedAt": "2026-06-18T08:00:00.000Z"
+      }
+    ],
+    "customers": [
+      {
+        "_id": "648f1105f5d314a520e7d002",
+        "userId": "648f10b5f5d314a520e7d001",
+        "name": "Sarah Connor",
+        "email": "sarah.connor@cyberdyne.com",
+        "phone": "+1 (555) 123-4567",
+        "company": "Cyberdyne Systems",
+        "status": "Converted",
+        "value": 150000,
+        "notes": "Interested in advanced automated security protocols. High value client.",
+        "createdAt": "2026-06-18T08:05:00.000Z",
+        "updatedAt": "2026-06-18T08:15:00.000Z"
+      },
+      {
+        "_id": "648f115cf5d314a520e7d003",
+        "userId": "648f10b5f5d314a520e7d001",
+        "name": "Marcus Wright",
+        "email": "marcus.wright@projectangel.org",
+        "phone": "+1 (555) 987-6543",
+        "company": "Project Angel",
+        "status": "Contacted",
+        "value": 45000,
+        "notes": "Followed up via phone call. Discussed custom support integrations.",
+        "createdAt": "2026-06-18T08:10:00.000Z",
+        "updatedAt": "2026-06-18T08:20:00.000Z"
+      },
+      {
+        "_id": "648f11b2f5d314a520e7d004",
+        "userId": "648f10b5f5d314a520e7d001",
+        "name": "Ivy Penn",
+        "email": "ivy.penn@naturetech.io",
+        "phone": "+1 (555) 456-7890",
+        "company": "NatureTech",
+        "status": "Converted",
+        "value": 95000,
+        "notes": "Contract signed. Onboarding scheduled for next Monday.",
+        "createdAt": "2026-06-18T08:12:00.000Z",
+        "updatedAt": "2026-06-18T08:25:00.000Z"
+      },
+      {
+        "_id": "648f121bf5d314a520e7d005",
+        "userId": "648f10b5f5d314a520e7d001",
+        "name": "Jordan Cox",
+        "email": "jordan.cox@innovatesolutions.com",
+        "phone": "+1 (555) 789-0123",
+        "company": "Innovate Solutions",
+        "status": "New",
+        "value": 12000,
+        "notes": "New lead inbound from landing page contact form.",
+        "createdAt": "2026-06-18T08:14:00.000Z",
+        "updatedAt": "2026-06-18T08:14:00.000Z"
+      }
+    ]
+  }
+}
