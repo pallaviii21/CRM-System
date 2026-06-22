@@ -12,17 +12,19 @@ const npmPath = process.env.npm_execpath
   ? `"${process.execPath}" "${process.env.npm_execpath}"` 
   : 'npm';
 
-// Clone the current environment variables and add our recursion guard flag
+// Clone the current environment variables and add our recursion guard flag.
+// Force NODE_ENV to development during install so that devDependencies (like Vite) are installed.
 const childEnv = {
   ...process.env,
-  CRM_INSTALLING_DEPS: 'true'
+  CRM_INSTALLING_DEPS: 'true',
+  NODE_ENV: 'development'
 };
 
 try {
   const rootDir = __dirname;
   
   console.log('Installing backend dependencies...');
-  execSync(`${npmPath} install`, { 
+  execSync(`${npmPath} install --include=dev`, { 
     stdio: 'inherit', 
     shell: true,
     cwd: path.join(rootDir, 'backend'),
@@ -30,7 +32,7 @@ try {
   });
   
   console.log('Installing frontend dependencies...');
-  execSync(`${npmPath} install`, { 
+  execSync(`${npmPath} install --include=dev`, { 
     stdio: 'inherit', 
     shell: true,
     cwd: path.join(rootDir, 'frontend'),
